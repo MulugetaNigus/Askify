@@ -10,7 +10,11 @@ app.use(cors());
 app.use(express.json());
 
 // main routes
-app.use("/api/v2/portal" , route );
+app.use("/" , (req , res) => {
+    res.send("hello express api");
+})
+
+// app.use("/api/v2/portal" , route );
 
 // app connections
 const PORT = process.env.PORT || 6666;
