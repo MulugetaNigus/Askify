@@ -10,9 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 // main routes
-app.use("/" , (req , res) => {
-    res.send("hello express api");
-})
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
 
 // app.use("/api/v2/portal" , route );
 
